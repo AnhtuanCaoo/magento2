@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Movie Landingspage</title>
+    </head>
+    <body>
+<!--        <remove name="wishlist_sidebar"/>-->
+        <referenceContainer name="content">
+            <block class="Magenest\Movie\Block\MagenestMovies" name="magenest_movie"
+                   template="Magenest_Movie::MagenestMovie.phtml"/>
+            <block class="Magenest\Movie\Block\Actors" name="actor"
+                   template="Magenest_Movie::Actor.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,32 @@
+
+<h2>Magenest Movie</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr>
+                    <th>Movie_Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Rating</th>
+                    <th>Director_Id</th>
+                </tr>
+                <?php foreach ($block->getMovies() as $movie):?>
+                <tr>
+                    <td>
+                        <?= $movie->getMovieId()?>
+                    </td>
+                    <td>
+                        <?php echo $movie->getName()?>
+                    </td>
+                    <td>
+                        <?php echo $movie->getDescription()?>
+                    </td>
+                    <td>
+                        <?php echo $movie->getRating()?>
+                    </td>
+                    <td>
+                        <?php echo $movie->getDirectorId()?>
+                    </td>
+                </tr>
+                <?php endforeach;?>
+            </table>
+
